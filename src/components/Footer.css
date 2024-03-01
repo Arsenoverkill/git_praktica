@@ -1,0 +1,10 @@
+footer {
+  background: rgb(109, 8, 109);
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  color: wheat;
+  font-size: 23px;
+  gap: 30px;
+  margin-top: 476px;
+}
