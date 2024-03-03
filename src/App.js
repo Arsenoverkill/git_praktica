@@ -1,15 +1,20 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Center from './components/Center';
 import Header from "./components";
+import Edit from "./components/Edit/Edit";
 import Footer from "./components/Footer";
-import Hero from "./components/hero";
+import Main from "./components/Main";
+import Admin from "./components/admin/Admin";
 
 function App() {
   return (
     <div className="App">
-     <Header/>
-     <Center/>
-      <Hero />
+      <Header />
+      <Main />
+      <Routes>
+        <Route path="/admin" element={<Admin/>} key={1}/>
+        <Route path="/edit/:id" element={<Edit />} key={2}/>
+      </Routes>
       <Footer />
     </div>
   );
