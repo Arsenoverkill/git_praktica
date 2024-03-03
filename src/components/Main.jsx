@@ -9,6 +9,9 @@ const Main = () => {
   useEffect(() => {
     rebootData();
   }, [data]);
+
+  // Kutman
+
   return (
     <div className="main">
       {data.map((el) => (
